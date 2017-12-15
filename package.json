@@ -1,8 +1,8 @@
 {
-  "name": "@stencil/starter",
+  "name": "@fruitycms/cms",
   "private": true,
   "version": "0.0.1",
-  "description": "Stencil App Starter",
+  "description": "A web component based CMS",
   "files": [
     "dist/"
   ],

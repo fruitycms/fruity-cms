@@ -16,7 +16,11 @@
 </head>
 <body>
 
-  <my-app></my-app>
+  <fruity-cms>
+    <stencil-router slot="content">
+        <stencil-route url="/" component="fruity-home" exact={true}/>
+    </stencil-router>
+  </fruity-cms>
 
   <style>
     body {

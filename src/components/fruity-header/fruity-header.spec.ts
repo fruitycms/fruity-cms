@@ -1,16 +1,16 @@
 import { render } from '@stencil/core/testing';
-import { AppHome } from './app-home';
+import { FruityHeader } from './fruity-header';
 
 describe('app', () => {
   it('should build', () => {
-    expect(new AppHome()).toBeTruthy();
+    expect(new FruityHeader()).toBeTruthy();
   });
 
   describe('rendering', () => {
     beforeEach(async () => {
       await render({
-        components: [AppHome],
-        html: '<app-home></app-home>'
+        components: [FruityHeader],
+        html: '<fruity-header></fruity-header>'
       });
     });
   });

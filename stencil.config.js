@@ -1,7 +1,7 @@
 exports.config = {
   bundles: [
-    { components: ['my-app', 'app-home'] },
-    { components: ['app-profile'] }
+    { components: ['fruity-cms', 'fruity-header', 'fruity-home'] },
+    //{ components: ['app-profile'] }
   ],
   collections: [
     { name: '@stencil/router' }

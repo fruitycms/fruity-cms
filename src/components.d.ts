@@ -6,34 +6,31 @@
 
 import '@stencil/router';
 
-import {
-  MatchResults,
-} from '@stencil/router';
 
 import {
-  AppHome as AppHome
-} from './components/app-home/app-home';
+  FruityCms as FruityCms
+} from './components/fruity-cms/fruity-cms';
 
 declare global {
-  interface HTMLAppHomeElement extends AppHome, HTMLElement {
+  interface HTMLFruityCmsElement extends FruityCms, HTMLElement {
   }
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLFruityCmsElement: {
+    prototype: HTMLFruityCmsElement;
+    new (): HTMLFruityCmsElement;
   };
   interface HTMLElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "fruity-cms": HTMLFruityCmsElement;
   }
   interface ElementTagNameMap {
-    "app-home": HTMLAppHomeElement;
+    "fruity-cms": HTMLFruityCmsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-home": JSXElements.AppHomeAttributes;
+      "fruity-cms": JSXElements.FruityCmsAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
+    export interface FruityCmsAttributes extends HTMLAttributes {
       
     }
   }
@@ -41,60 +38,60 @@ declare global {
 
 
 import {
-  AppProfile as AppProfile
-} from './components/app-profile/app-profile';
+  FruityHeader as FruityHeader
+} from './components/fruity-header/fruity-header';
 
 declare global {
-  interface HTMLAppProfileElement extends AppProfile, HTMLElement {
+  interface HTMLFruityHeaderElement extends FruityHeader, HTMLElement {
   }
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  var HTMLFruityHeaderElement: {
+    prototype: HTMLFruityHeaderElement;
+    new (): HTMLFruityHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    "fruity-header": HTMLFruityHeaderElement;
   }
   interface ElementTagNameMap {
-    "app-profile": HTMLAppProfileElement;
+    "fruity-header": HTMLFruityHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "app-profile": JSXElements.AppProfileAttributes;
+      "fruity-header": JSXElements.FruityHeaderAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      
-        match?: MatchResults
+    export interface FruityHeaderAttributes extends HTMLAttributes {
+      cmsName?: string;
+      navigation?: object;
     }
   }
 }
 
 
 import {
-  MyApp as MyApp
-} from './components/my-app/my-app';
+  FruityHome as FruityHome
+} from './components/fruity-home/fruity-home';
 
 declare global {
-  interface HTMLMyAppElement extends MyApp, HTMLElement {
+  interface HTMLFruityHomeElement extends FruityHome, HTMLElement {
   }
-  var HTMLMyAppElement: {
-    prototype: HTMLMyAppElement;
-    new (): HTMLMyAppElement;
+  var HTMLFruityHomeElement: {
+    prototype: HTMLFruityHomeElement;
+    new (): HTMLFruityHomeElement;
   };
   interface HTMLElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    "fruity-home": HTMLFruityHomeElement;
   }
   interface ElementTagNameMap {
-    "my-app": HTMLMyAppElement;
+    "fruity-home": HTMLFruityHomeElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-app": JSXElements.MyAppAttributes;
+      "fruity-home": JSXElements.FruityHomeAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyAppAttributes extends HTMLAttributes {
+    export interface FruityHomeAttributes extends HTMLAttributes {
       
     }
   }

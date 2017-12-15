@@ -1,16 +1,16 @@
 import { render } from '@stencil/core/testing';
-import { MyApp } from './my-app';
+import { FruityCms } from './fruity-cms';
 
 describe('my-app', () => {
   it('should build', () => {
-    expect(new MyApp()).toBeTruthy();
+    expect(new FruityCms()).toBeTruthy();
   });
 
   describe('rendering', () => {
     beforeEach(async () => {
       await render({
-        components: [MyApp],
-        html: '<my-app></my-app>'
+        components: [FruityCms],
+        html: '<fruity-cms></fruity-cms>'
       });
     });
   });
