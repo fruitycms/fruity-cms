@@ -8,91 +8,30 @@ import '@stencil/router';
 
 
 import {
-  FruityCms as FruityCms
-} from './components/fruity-cms/fruity-cms';
+  FruityEdit as FruityEdit
+} from './components/fruity-edit/fruity-edit';
 
 declare global {
-  interface HTMLFruityCmsElement extends FruityCms, HTMLElement {
+  interface HTMLFruityEditElement extends FruityEdit, HTMLElement {
   }
-  var HTMLFruityCmsElement: {
-    prototype: HTMLFruityCmsElement;
-    new (): HTMLFruityCmsElement;
+  var HTMLFruityEditElement: {
+    prototype: HTMLFruityEditElement;
+    new (): HTMLFruityEditElement;
   };
   interface HTMLElementTagNameMap {
-    "fruity-cms": HTMLFruityCmsElement;
+    "fruity-edit": HTMLFruityEditElement;
   }
   interface ElementTagNameMap {
-    "fruity-cms": HTMLFruityCmsElement;
+    "fruity-edit": HTMLFruityEditElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "fruity-cms": JSXElements.FruityCmsAttributes;
+      "fruity-edit": JSXElements.FruityEditAttributes;
     }
   }
   namespace JSXElements {
-    export interface FruityCmsAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
-
-import {
-  FruityHeader as FruityHeader
-} from './components/fruity-header/fruity-header';
-
-declare global {
-  interface HTMLFruityHeaderElement extends FruityHeader, HTMLElement {
-  }
-  var HTMLFruityHeaderElement: {
-    prototype: HTMLFruityHeaderElement;
-    new (): HTMLFruityHeaderElement;
-  };
-  interface HTMLElementTagNameMap {
-    "fruity-header": HTMLFruityHeaderElement;
-  }
-  interface ElementTagNameMap {
-    "fruity-header": HTMLFruityHeaderElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "fruity-header": JSXElements.FruityHeaderAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface FruityHeaderAttributes extends HTMLAttributes {
-      cmsName?: string;
-      navigation?: object;
-    }
-  }
-}
-
-
-import {
-  FruityHome as FruityHome
-} from './components/fruity-home/fruity-home';
-
-declare global {
-  interface HTMLFruityHomeElement extends FruityHome, HTMLElement {
-  }
-  var HTMLFruityHomeElement: {
-    prototype: HTMLFruityHomeElement;
-    new (): HTMLFruityHomeElement;
-  };
-  interface HTMLElementTagNameMap {
-    "fruity-home": HTMLFruityHomeElement;
-  }
-  interface ElementTagNameMap {
-    "fruity-home": HTMLFruityHomeElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "fruity-home": JSXElements.FruityHomeAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface FruityHomeAttributes extends HTMLAttributes {
-      
+    export interface FruityEditAttributes extends HTMLAttributes {
+      match?: any;
     }
   }
 }

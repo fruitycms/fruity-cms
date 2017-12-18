@@ -1,4 +1,5 @@
-import { Component } from '@stencil/core';
+import { Component, Prop } from '@stencil/core';
+import { RouterHistory } from '@stencil/router';
 
 @Component({
   tag: 'fruity-cms',
@@ -6,6 +7,9 @@ import { Component } from '@stencil/core';
   shadow: true
 })
 export class FruityCms {
+
+  @Prop() history: RouterHistory;
+  
   render() {
     return (
       <div>
